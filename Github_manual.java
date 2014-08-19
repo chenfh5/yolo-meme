@@ -28,6 +28,9 @@ git add .
 git commit -m "description"
 git push -u origin master 
 
+//all in all
+git rm -r --cached .; git add .; git commit -m "manual"; git push -u origin master;
+
 //--clone someone's repo
 git clone https://github.com/chenfh5/stream-lib.git
 

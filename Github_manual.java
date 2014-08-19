@@ -21,7 +21,8 @@ git add .     或者添加具体的文件 git add 你要添加的文件(test/tes
 git commit -m "description"
 git push -u origin master     //还记的这个别名吗  origin  这个别名就是你用第一种方法首次 向 GITHUB提交代码 你用的 别名
 
-//delete the file have already in the internet
+//delete the file have already in 
+//the internet and add the current directory and his son
 git rm -r --cached .
 git add .
 git commit -m "description"

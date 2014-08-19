@@ -16,21 +16,15 @@ git pull origin master
 git status
 git log --stat
 
-第二:下面说说更新代码的操作吧
-
-cd /home/test(假如 test就是你的用户名)/githubtest(这个文件夹是你要提交代码的项目文件夹,前提是你已经用过第一种方法了)
-
- git add .     或者添加具体的文件 git add 你要添加的文件(test/test/test.txt)
-
-git commit -m "说明"
+//update codes
+git add .     或者添加具体的文件 git add 你要添加的文件(test/test/test.txt)
+git commit -m "description"
 git push -u origin master     //还记的这个别名吗  origin  这个别名就是你用第一种方法首次 向 GITHUB提交代码 你用的 别名
-
-好了  这就是使用GITHUB 提交自己的代码 操作了.大家可以举一反三的 自己去思考,其它更多的功能大家就自己去挖掘吧 
 
 //delete the file have already in the internet
 git rm -r --cached .
 git add .
-git commit -m ".gitignore is now working"
+git commit -m "description"
 git push -u origin master 
 
 //--clone someone's repo

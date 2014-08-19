@@ -33,6 +33,10 @@ git add .
 git commit -m ".gitignore is now working"
 git push -u origin master 
 
+//--clone someone's repo
+git clone https://github.com/chenfh5/stream-lib.git
+
+
 
 //--------------
 网上搜索了下，是因为远程 repository和我本地的

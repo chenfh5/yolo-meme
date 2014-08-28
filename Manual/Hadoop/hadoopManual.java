@@ -5,17 +5,14 @@ cd /home/chenfh5/chenfh5Java/hadoop-2.3.0/
 ./bin/hadoop namenode -format
 
 //open service
+sbin/start-dfs.sh
 ./sbin/start-all.sh;
-// ./sbin/hadoop-daemon.sh start namenode;
-// ./sbin/hadoop-daemon.sh start datanode;
-// ./sbin/hadoop-daemon.sh start dfs;
-// ./sbin/start-yarn.sh;
 
 // see the node available
 ./bin/hadoop dfsadmin -report
 
 //show in IE
-http://127.0.1.1:50070/
+http://localhost:50070/   
 
 //create new folder
 ./bin/hadoop fs -mkdir /input;
@@ -24,7 +21,7 @@ http://127.0.1.1:50070/
 ./sbin/stop-all.sh;
 
 //put data into HDFS
-./bin/hadoop fs -put /home/chenfh5/Desktop/someUrl /input
+./bin/hadoop fs -put /home/chenfh5/Desktop/inputFromLocal /input
 
 //open file in HDFS
 ./bin/hadoop fs -cat /input1/file2.txt
@@ -33,5 +30,10 @@ http://127.0.1.1:50070/
 ./bin/hadoop fs -get /input1/file2.txt /home/chenfh5/Desktop
 
 //remove data from HDFS
-./bin/hadoop fs -rm r /input
+./bin/hadoop fs -rm -r /input
 
+//example
+./bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.3.0.jar grep input output 'dfs[a-z.]+'
+
+Ref:
+http://archive.cloudera.com/cdh5/cdh/5/hadoop/hadoop-project-dist/hadoop-common/SingleCluster.html

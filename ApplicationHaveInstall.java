@@ -1,5 +1,5 @@
 //while update the github
-git rm -r --cached .; git add .; git commit -m "manual"; git push -u origin master;
+cd /home/chenfh5/Test_Github; git rm -r --cached .; git add .; git commit -m "manual"; git push -u origin master;
 
 JDK
 Nutch

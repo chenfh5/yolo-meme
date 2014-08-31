@@ -25,7 +25,7 @@ class SendFactory {
 	}
 }
 
-public class FactoryTest {
+public class StaticFactoryTest {
 	public static void main(String[] args) {
 		Sender sender = SendFactory.produceMail();
 		Sender sender2 = SendFactory.produceSms();

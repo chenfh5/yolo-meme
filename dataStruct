@@ -1,4 +1,4 @@
-1.	排序【7】
+1.	排序【7】 （小→大）
 	a.	交换排序	
 		i.	冒泡排序（抓一把沙子扔水里，沙子立马下沉，灰尘因惯性先下沉，但是又立马像气泡一样上浮） O(N)~O(N^2)
 		ii.	快速排序（切割；第一位为base；从数组的right位置向前找小于base的数，找到就赋给left位置；从数组的left位置向后找大于base的数，找到就赋给right位置；直到left和right指针重合；递归）O(NlogN)
@@ -36,4 +36,5 @@ Ref:
 排序算法：http://www.cnblogs.com/huangxincheng/archive/2011/11/20/2255695.html
 归并排序：http://www.cnblogs.com/kkun/archive/2011/11/23/merge_sort.html
 大类：http://www.cnblogs.com/mcgrady/p/3335847.html
+快排：http://blog.csdn.net/morewindows/article/details/6684558
 

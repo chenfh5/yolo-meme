@@ -61,9 +61,7 @@ public class qwe {
 
 	public static void quick_sort(int[] s, int L, int R) {
 		if (L < R) {
-			int i = L;
-			int j = R;
-			int x = s[L];
+			int i = L, j = R, x = s[L];
 			while (i < j) {
 				while (i < j && s[j] > x) {
 					j--;
